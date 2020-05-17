@@ -1,3 +1,5 @@
+#Author: Simon Lesné
+
 # Web scraping using beautifulsoup and using data extracted to create a database
 
 from bs4 import BeautifulSoup

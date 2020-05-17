@@ -1,3 +1,5 @@
+#Author: Simon Lesné
+
 # Creating a GUI interface to visualize Covid data
 
 from tkinter import *
@@ -160,9 +162,9 @@ choice.set("Histogram")
 sec_choice = StringVar()
 sec_choice.set('Deaths')
 
-histogram_btn = Radiobutton(bottom_frame, text='Histogram', variable=choice, value='Histogram')
+histogram_btn = Radiobutton(bottom_frame, text='Per day', variable=choice, value='Histogram')
 histogram_btn.grid(row=0, sticky='W')
-graph_btn = Radiobutton(bottom_frame, text='Graph', variable=choice, value='Graph')
+graph_btn = Radiobutton(bottom_frame, text='Total over time', variable=choice, value='Graph')
 graph_btn.grid(row=1, sticky='W')
 
 deaths_btn = Radiobutton(bottom_frame, text='Deaths', variable=sec_choice, value='Deaths')
